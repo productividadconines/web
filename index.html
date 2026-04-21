@@ -22,7 +22,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 15px 40px;
-      background: #fff5cf;
+      background: #fff5cf; /* fondo */
       border-radius: 40px;
       margin: 20px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.05);
@@ -30,7 +30,7 @@
 
     .logo {
       font-weight: 600;
-      color: #013f62;
+      color: #013f62; /* amarillo */
       font-size: 20px;
     }
 
@@ -39,14 +39,20 @@
       gap: 30px;
     }
 
-    .menu a {
+   /* LINKS SIEMPRE IGUAL */
+    .menu a,
+    .menu a:visited,
+    .menu a:active,
+    .menu a:hover {
       text-decoration: none;
       color: #013f62;
       font-size: 16px;
+      transition: 0.3s;
     }
 
+    /* pequeño efecto elegante */
     .menu a:hover {
-      color: #fff5cf;
+      opacity: 0.7;
     }
 
     .right {
@@ -57,15 +63,15 @@
 
     .search {
       border: none;
-      background: #013f62;
-      color: #fff5cf;
+      background: #013f62; /* fondo oscuro */
+      color: #fff5cf; /* texto Search */
       padding: 8px 15px;
       border-radius: 20px;
       outline: none;
     }
 
     .search::placeholder {
-      color: #fff5cf;
+      color: #fff5cf; /* placeholder */
     }
 
     .icon {
@@ -80,7 +86,7 @@
 <body>
 
   <div class="navbar">
-    <div class="logo"> 🌟PRODUCTIVIDAD CON INES🌟 </div>
+    <div class="logo"> PRODUCTIVIDAD CON INES </div>
 
     <div class="menu">
       <a href="#">Home</a>
