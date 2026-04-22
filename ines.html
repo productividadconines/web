@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>Inés</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -13,6 +17,64 @@
       background: #f8f8f8;
     }
 
+    .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #fff5cf;
+  border-radius: 40px;
+  margin: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: 700;
+  color: #013f62;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a,
+.menu a:visited,
+.menu a:active,
+.menu a:hover {
+  text-decoration: none;
+  color: #013f62;
+  font-size: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search {
+  border: none;
+  background: #013f62;
+  color: #fff5cf;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.search::placeholder {
+  color: #fff5cf;
+}
+
+.icon {
+  font-size: 18px;
+  color: #013f62;
+}
+
+.estrella {
+  pointer-events: none;
+}
+  
     /* HERO */
     .hero {
   width: calc(100% - 40px); /* deja margen lateral */
@@ -94,6 +156,7 @@
       margin-bottom: 20px;
     }
 
+
   </style>
 </head>
 
@@ -124,7 +187,7 @@
 
     <div class="hero-content">
       <h1>Tu aliada en productividad con café</h1>
-      <a href="mailto:tuemail@gmail.com" class="btn">¡Colaboremos!</a>
+      <a href="mailto:info@inesvidal.es" class="btn">¡Colaboremos!</a>
     </div>
   </section>
 
