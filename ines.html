@@ -29,51 +29,63 @@
 }
 
 .logo {
-  font-weight: 700;
-  color: #013f62;
-  font-size: 20px;
-}
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: #013f62; /* amarillo */
+      font-size: 22px;
+    }
 
-.menu {
-  display: flex;
-  gap: 30px;
-}
+    .menu {
+      display: flex;
+      gap: 30px;
+    }
 
-.menu a,
-.menu a:visited,
-.menu a:active,
-.menu a:hover {
-  text-decoration: none;
-  color: #013f62;
-  font-size: 16px;
-}
+   /* LINKS SIEMPRE IGUAL */
+    .menu a,
+    .menu a:visited,
+    .menu a:active,
+    .menu a:hover {
+      text-decoration: none;
+      color: #013f62;
+      font-size: 16px;
+      transition: 0.3s;
+    }
 
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+    /* pequeño efecto elegante */
+    .menu a:hover {
+      opacity: 0.7;
+    }
 
-.search {
-  border: none;
-  background: #013f62;
-  color: #fff5cf;
-  padding: 8px 15px;
-  border-radius: 20px;
-}
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
-.search::placeholder {
-  color: #fff5cf;
-}
+    .search {
+      border: none;
+      background: #013f62; /* fondo oscuro */
+      color: #fff5cf; /* texto Search */
+      padding: 8px 15px;
+      border-radius: 20px;
+      outline: none;
+    }
 
-.icon {
-  font-size: 18px;
-  color: #013f62;
-}
+    .search::placeholder {
+      color: #fff5cf; /* placeholder */
+    }
 
-.estrella {
-  pointer-events: none;
-}
+    .icon {
+      font-size: 18px;
+      color: #013f62;
+    }
+
+    /* ⭐ ESTRELLA NO CLICABLE */
+    .estrella {
+      cursor: default;
+      user-select: none;
+      pointer-events: none;
+    }
   
     /* HERO */
     .hero {
