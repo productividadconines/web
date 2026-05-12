@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
 
+  <title>Tienda</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f8f8f8;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 40px;
+      background: #fff5cf;
+      border-radius: 40px;
+      margin: 20px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      left: 40px;
+      font-weight: 700;
+      color: #013f62;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #013f62;
+      font-weight: 700;
+    }
+
+    .right {
+      position: absolute;
+      right: 40px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .search {
+      border: none;
+      background: #013f62;
+      color: #fff5cf;
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+
+    .search::placeholder {
+      color: #fff5cf;
+    }
+
+    .icon {
+      color: #013f62;
+    }
+
+    .estrella {
+      pointer-events: none;
+    }
+
+    /* PRODUCTO */
+
+    .tienda {
+  padding: 60px;
+  display: flex;
+  justify-content: flex-start; /* 👈 lo manda a la izquierda */
+}
+
+    .producto {
+      max-width: 500px;
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 50px;
+      display: block;
+    }
+
+    .producto h2 {
+      font-size: 50px;
+      color: #a5b4ff;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .linea {
+      width: 40px;
+      height: 2px;
+      background: #013f62;
+      margin-bottom: 20px;
+    }
+
+    .precio {
+      font-size: 40px;
+      color: #f5b000;
+      font-weight: 700;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <div class="navbar">
+
+    <div class="logo">
+      PRODUCTIVIDAD CON INES
+    </div>
+
+    <div class="menu">
+      <a href="ines.html">Inés</a>
+      <a href="#">Cursos</a>
+      <a href="tienda.html">Tienda</a>
+    </div>
+
+    <div class="right">
+      <span class="icon estrella">✷</span>
+      <input class="search" type="text" placeholder="Search">
+    </div>
+
+  </div>
+
+  <!-- PRODUCTO -->
+
+  <section class="tienda">
+    <div class="producto">
+      <img src="planner.jpg" alt="Planner Notion">
+      <h2>Planner Semanal Notion</h2>
+      <div class="linea"></div>
+      <div class="precio">0,00€</div>
+    </div>
+
+  </section>
+
+</body>
+</html>
